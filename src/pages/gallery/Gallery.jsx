@@ -8,6 +8,9 @@ const Gallery = () => {
         <Helmet>
             <title>The Wedding Gallery</title>
             <link rel="canonical" href="https://theweddinggallery.pages.dev/example" />
+            <meta name="description" content="The Wedding Gallery" />
+            <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
+            <meta name="author" content="Reyan John Narvaja" />
         </Helmet>
         <span className='font-tiny margin-bottom-1rem'>-shift+scroll-</span>
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
