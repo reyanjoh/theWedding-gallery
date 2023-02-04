@@ -47,43 +47,52 @@ code {
 }
 
 
+@font-face {
+	font-family: 'Rhythem';
+	src: url('./util/font/RhythemSignature-GO8vg.ttf');
+}
 
 
 
 
-/* #slider {
-	position: relative;
-	width: 500%;
+
+
+#slider a {
+	/* position: relative; */
+	/* width: 500%; */
 	margin: 0;
 	left: 0;
-	animation: 20s slider infinite;
+	animation: 35s slider infinite;
 }
 
 
 @keyframes slider {
 	0% {
-		left: 0;
+		transform: translateX(0);
 	}
-	20% {
-		left: -100%;
+	5% {
+		transform: translateX(0);
 	}
-	35% {
-		left: -200%;
+	15.5% {
+		transform: translateX(-100%);
 	}
-	45% {
-		left: -300%;
+	27% {
+		transform: translateX(-200%);
 	}
-	60% {
-		left: -400%;
+	40.5% {
+		transform: translateX(-300%);
 	}
-	75% {
-		left: -500%;
+	54% {
+		transform: translateX(-400%);
 	}
-	
-	90% {
-		left: -600%;
+	65.5% {
+		transform: translateX(-500%);
+	}
+	81% {
+		transform: translateX(-600%);
 	}
 	100% {
-		left: -700%;
+		transform: translateX(0%);
 	}
-} */
+}
+

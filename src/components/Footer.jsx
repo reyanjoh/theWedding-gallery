@@ -1,26 +1,16 @@
 import React from 'react'
+import SocialMedias from './SocialMedias'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='padding-2-6'>
         <div className="site-map-and-socials">
             <div className="site-map">
                 
             </div>
-            <div className="socials">
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFacebookF}/>
-                </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faPinterestP}/>
-                </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faTwitter}/>
-                </a>
-            </div>
+            <SocialMedias />
         </div>
         
         <div className="copy-right font-tiny">

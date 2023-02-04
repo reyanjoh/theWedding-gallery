@@ -14,14 +14,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/gallery' element={<Gallery />}/>
-        {/* <Route path='/contact' />
-        <Route path='/career' />
-        <Route path='/blogs' /> */}
+        <Route path='/studio-listing' element={<Gallery />}/>
+        <Route path='/contact' element={<Gallery />}/>
+        <Route path='/career' element={<Gallery />}/>
+        <Route path='/blogs' element={<Gallery />}/>
       </Routes>
 
       <Footer />
-
-
     </div>
   );
 }

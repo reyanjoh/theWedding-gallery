@@ -6,13 +6,13 @@ const Gallery = () => {
   return (
     <div className='Gallery bg-color-light flex flex-column flex-align-center flex-justify-center'>
         <Helmet>
-            <title>The Wedding Gallery</title>
+            <title>Gallery | The Wedding Gallery</title>
             <link rel="canonical" href="https://theweddinggallery.pages.dev/example" />
             <meta name="description" content="The Wedding Gallery" />
             <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
             <meta name="author" content="Reyan John Narvaja" />
         </Helmet>
-        <span className='font-tiny margin-bottom-1rem'>-shift+scroll-</span>
+        {/* <span className='font-tiny scroll-mgs margin-bottom-1rem'>-shift+scroll-</span> */}
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
             <a href='/' id='card1'><GalleryCard srcs={'https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
             <a href='/' id='card2'><GalleryCard srcs={'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
@@ -24,13 +24,13 @@ const Gallery = () => {
         </div>
         
         <div className='studio-names'>
-            <a className='studio-name' href="#card1">Studio 1</a>
+            {/* <a className='studio-name' href="#card1">Studio 1</a>
             <a className='studio-name' href="#card2">Studio 2</a>
             <a className='studio-name' href="#card3">Studio 3</a>
             <a className='studio-name' href="#card4">Studio 4</a>
             <a className='studio-name' href="#card5">Studio 5</a>
             <a className='studio-name' href="#card6">Studio 6</a>
-            <a className='studio-name' href="#card7">Studio 7</a>
+            <a className='studio-name' href="#card7">Studio 7</a> */}
         </div>
 
     </div>
