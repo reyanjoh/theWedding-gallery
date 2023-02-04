@@ -9,7 +9,7 @@ const SocialMedias = () => {
         <a className='social-icons' href="https://www.facebook.com/people/The-Wedding-Gallery/100089969114185/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF}/>
         </a>
-        <a className='social-icons' href="/" target="_blank" rel="noopener noreferrer">
+        <a className='social-icons' href="https://pin.it/2kNidgX" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faPinterestP}/>
         </a>
         <a className='social-icons' href="/" target="_blank" rel="noopener noreferrer">

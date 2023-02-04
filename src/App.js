@@ -13,11 +13,12 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<Gallery />}/>
         <Route path='/gallery' element={<Gallery />}/>
         <Route path='/studio-listing' element={<Gallery />}/>
         <Route path='/contact' element={<Gallery />}/>
-        <Route path='/career' element={<Gallery />}/>
         <Route path='/blogs' element={<Gallery />}/>
+        <Route path='/career' element={<Gallery />}/>
       </Routes>
 
       <Footer />

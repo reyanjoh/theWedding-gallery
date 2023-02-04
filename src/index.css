@@ -10,6 +10,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+	
 }
 
 
@@ -53,7 +54,10 @@ code {
 }
 
 
-
+.Garamond{
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 100;
+}
 
 
 
@@ -62,7 +66,7 @@ code {
 	/* width: 500%; */
 	margin: 0;
 	left: 0;
-	animation: 35s slider infinite;
+	animation: 30s slider infinite;
 }
 
 

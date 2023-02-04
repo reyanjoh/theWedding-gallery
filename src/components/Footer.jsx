@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         
         <div className="copy-right font-tiny">
-            <center><span>© 2022 The Wedding Gallery, all rights reserved.</span></center>
+            <center><span>© 2023 The Wedding Gallery, all rights reserved.</span></center>
         </div>
     </footer>
   )
