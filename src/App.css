@@ -1,38 +1,182 @@
+:root{
+  
+  --border-color: #adadad;
+  --border-color-light: #E2E2E2;
+
+  --ligh-yellow-color: #FE9B1D;
+  /* --darker-yellow-color: #ffb048; */
+
+  --highlight-red: #9aa506;
+
+  --bg-color-light:#f5f7f8;
+  --bg-color-mid:#1B548A;
+  --bg-color-dark:#124375;
+
+
+  --font-color-main: #073D60;
+  --font-color-light:#DFE5EB;
+  /* --font-color-mid:; */
+  --font-color-dark: #3a464e;
+
+
+  --space-thin: 2rem;
+  --space-small: 4rem;
+  --space-wide: 11rem;
+
+
+  --font-tiny: .6rem;
+  --font-small: .8rem;
+  --font-medium: 1rem;
+  --font-large: 1.5rem;
+  --font-xlarge: 2rem;
+  
+}
+
+*{
+  color: black;
+  letter-spacing: 2px;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+.bg-color-light{background-color: var(--bg-color-light);}
+.bg-color-mid{background-color: var(--bg-color-mid);}
+.bg-color-dark{background-color: var(--bg-color-dark);}
+
+.vh100{height: 100vh;}
+.vh80{height: 80vh;}
+.vh60{height: 60vh;}
+.vh10{height: 10vh;}
+
+
+
+
+/* FLEX STYLINGS */
+.flex{ display: flex;}
+.flex-column{flex-direction: column;}
+.flex-row{flex-direction: row;}
+
+.flex-column-on-desktop-row-on-mobile{flex-direction: column;}
+.flex-row-on-desktop-column-on-mobile{flex-direction: row;}
+.flex-align-center{align-items: center;}
+.flex-justify-center{justify-content: center;}
+.space-between{justify-content: space-between;}
+/* FLEX STYLINGS */
+
+/* PADDINGS */
+.padding-0-1{padding: 0 1rem}
+
+.padding-2-2{padding: var(--space-thin)}
+.padding-0-2{padding: 0 var(--space-thin)}
+
+.padding-2-4{padding: var(--space-thin) var(--space-small);}
+.padding-0-4{padding: 0 var(--space-small);}
+
+.padding-2-6{padding: var(--space-thin) var(--space-wide);}
+.padding-0-6{padding: 0 var(--space-wide);}
+
+.margin-bottom-1rem{margin-bottom: 1rem;}
+/* PADDINGS */
+
+/* FONT SIZINGS */
+.font-tiny{font-size: var(--font-tiny);}
+.font-small{font-size: var(--font-small);}
+.font-medium{font-size: var(--font-medium);}
+.font-large{font-size: var(--font-large);}
+.font-xlarge{font-size: var(--font-xlarge);}
+/* FONT SIZINGS */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  /* background-color: rgb(255, 200, 200); */
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.active{
+  color: var(--highlight-red);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a{
+  text-decoration: none;
+}
+nav{
+  position: sticky;
+}
+.Gallery{
+  min-height: 80vh;
+  /* overflow-x: hidden; */
+}
+
+.card-section{
+  overflow-x: auto;
+  width: 100vw;
+  
+}
+
+
+.studio-names{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: var(--font-tiny);
+}
+
+.studio-name{
+
+  color: rgb(117, 117, 117);
+}
+
+
+.GalleryCard{
+  /* background-color:  red; */
+  width: 100vw;
+  height: 25rem;
+}
+
+.GalleryCard > img{
+  transition: .6s;
+  object-fit: cover;
+  object-position: center;
+  box-shadow:  0 20px 20px #c5c5c5
+}
+
+.GalleryCard > img:hover{
+  transform: scale(1.01);
+}
+
+.home{
+  min-height: 50vh;
+}
+
+
+
+/* .header{
+  
+} */
+
+@media screen and (max-width: 360px) {
+  :root{  
+  
+    --space-thin: 2rem;
+    --space-small: 4rem;
+    --space-wide: 1rem;
+  
+  
+    --font-tiny: .5rem;
+    --font-small: .8rem;
+    --font-medium: 1rem;
+    --font-large: 1.5rem;
+    --font-xlarge: 2rem;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+  .flex-row-on-desktop-column-on-mobile{flex-direction: column;}
+
 }

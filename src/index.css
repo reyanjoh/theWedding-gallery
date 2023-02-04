@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 216, 216); 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+} */
+
+
+
+.snap-x-scroll{
+  scroll-snap-type: inline mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-x-scroll > *{
+  scroll-snap-align: center;
+}
+
+
+
+
+
+
+/* #slider {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: -100%;
+	}
+	35% {
+		left: -200%;
+	}
+	45% {
+		left: -300%;
+	}
+	60% {
+		left: -400%;
+	}
+	75% {
+		left: -500%;
+	}
+	
+	90% {
+		left: -600%;
+	}
+	100% {
+		left: -700%;
+	}
+} */
