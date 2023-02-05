@@ -51,6 +51,11 @@ code {
 @font-face {
 	font-family: 'Rhythem';
 	src: url('./util/font/RhythemSignature-GO8vg.ttf');
+
+
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Sassy Frass', cursive;
 }
 
 

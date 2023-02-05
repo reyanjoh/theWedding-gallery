@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import AdSpace from '../../components/AdSpace'
 import Banner from './components/Banner'
+import FeaturedSection from './components/FeaturedSection';
+import './Home.css';
 
 
 const Home = () => {
@@ -16,8 +18,12 @@ const Home = () => {
       </Helmet>
       
       <Banner />
-      
       <AdSpace />
+      
+      <FeaturedSection />
+
+      
+
 
   
     </div>

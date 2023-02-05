@@ -1,0 +1,49 @@
+.Gallery{
+    position: relative;
+    z-index: 9;
+    min-height: 80vh;
+    /* overflow-x: hidden; */
+  }
+  
+  /* .scroll{
+     margin-top: 13rem;
+  } */
+  
+  .card-section{
+   
+    overflow-x: hidden;
+    width: 100vw;
+    
+  }
+  
+  
+  .studio-names{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--font-tiny);
+  }
+  
+  .studio-name{
+  
+    color: rgb(117, 117, 117);
+  }
+  
+  
+  .GalleryCard{
+    /* background-color:  red; */
+    width: 100vw;
+    height: 25rem;
+  }
+  
+  .GalleryCard > img{
+    transition: .6s;
+    object-fit: cover;
+    object-position: center;
+    box-shadow:  0 20px 20px #c5c5c5
+  }
+  
+  .GalleryCard > img:hover{
+    transform: scale(1.01);
+  }

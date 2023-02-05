@@ -6,7 +6,8 @@
   --ligh-yellow-color: #FE9B1D;
   /* --darker-yellow-color: #ffb048; */
 
-  --highlight-red: #9aa506;
+  --highlight: #9aa506;
+  --highlight-2: #dfe49b;
 
   --bg-color-light:#f5f7f8;
   --bg-color-mid:#1B548A;
@@ -49,6 +50,11 @@ html{
 .vh80{height: 80vh;}
 .vh60{height: 60vh;}
 .vh10{height: 10vh;}
+
+.width50{width: 50%;}
+
+.width60{width: 60%;}
+.width40{width: 40%;}
 
 
 
@@ -108,7 +114,7 @@ html{
 .not-available{cursor: not-allowed;}
 
 .active{
-  color: var(--highlight-red);
+  color: var(--highlight);
 }
 
 a{
@@ -142,100 +148,34 @@ nav{
 }
 
 
-.banner-cta{
-  /* position: relative; */
-  background-color: #202020;
-  width: 50%;
-  height: 100%;
-  opacity: .9;
-}
-
-.banner-h1{
-  width: 30rem;
-}
-
-.banner-btn{
-  background-color: #ffffff;
-  padding: .7rem 2rem;
-  width: 6rem;
-  margin-left: var(--space-wide);
-}
-
-
-
-
-
-.Gallery{
-  position: relative;
-  z-index: 9;
-  min-height: 80vh;
-  /* overflow-x: hidden; */
-}
-
-/* .scroll{
-   margin-top: 13rem;
-} */
-
-.card-section{
- 
-  overflow-x: hidden;
-  width: 100vw;
-  
-}
-
-
-.studio-names{
-  width: 100%;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: var(--font-tiny);
-}
-
-.studio-name{
-
-  color: rgb(117, 117, 117);
-}
-
-
-.GalleryCard{
-  /* background-color:  red; */
-  width: 100vw;
-  height: 25rem;
-}
-
-.GalleryCard > img{
-  transition: .6s;
-  object-fit: cover;
-  object-position: center;
-  box-shadow:  0 20px 20px #c5c5c5
-}
-
-.GalleryCard > img:hover{
-  transform: scale(1.01);
-}
-
-.home{
-  min-height: 40vh;
-}
-
 .social-icons {
-  margin: 0 2.5rem;
+  margin-right: 2.5rem;
+ 
 }
+
 .social-icons *{
   color: #5d6f7c;
+  width: 3rem;
+  padding: .5rem 0 ;
+  /* background-color: red; */
 }
+
+.social-icons:hover *{
+  color: var(--highlight);
+}
+
+
 
 
 footer{
-  height: 30rem;
+  height: 3rem;
 }
 
 
 .AdSpaceYo{
   position: absolute;
   right: 0;
-  z-index: 15;
+  /* z-index: 15; */
   /* background-color: #124375; */
   width: 13vw;
   min-height: 20rem;

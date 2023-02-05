@@ -1,0 +1,105 @@
+.home{
+    min-height: 40vh;
+}
+
+.banner-cta{
+/* position: relative; */
+background-color: #202020;
+width: 50%;
+height: 100%;
+opacity: .9;
+}
+
+.banner-h1{
+width: 30rem;
+}
+
+.banner-btn{
+background-color: #ffffff;
+padding: .7rem 2rem;
+width: 6rem;
+margin-left: var(--space-wide);
+transition: .2s;
+}
+
+.banner-btn:hover{
+    background-color: var(--highlight-2);
+}
+
+.FeaturedStudio{
+    min-height: 80vh;
+    /* background-color: rebeccapurple; */
+}
+.featured-studio-info{
+    padding-bottom: 3rem;
+}
+
+
+
+.studio-name{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    color: #202020;
+}
+
+.presents{
+    margin: 2rem 0;
+    font-size: var(--font-medum);
+}
+
+.featured-studio-img{
+    height: 20rem;
+}
+
+.featured-studio-client-info-section{
+    margin-left: 2rem;
+}
+
+.FeaturedStudio:nth-child(even){
+    background-color: var(--highlight-2);
+}
+
+.FeaturedStudio:nth-child(even) > .featured-studio-info{
+    text-align: right;
+}
+
+.FeaturedStudio:nth-child(even) > section{
+    flex-direction: row-reverse;
+}
+
+.FeaturedStudio:nth-child(even) > section > .featured-studio-client-info-section{
+    margin: 0 2rem 0 0;
+    text-align: right;
+}
+
+.featured-studio-client-info-section > h3{
+    margin: 0;
+    font-size: var(--font-xlarge);
+}
+
+.featured-studio-client-info{
+    font-size: var(--font-small);
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+
+
+.featured-studio-cta{
+    border: 1px solid rgb(83, 83, 83);
+    padding: .5rem 1rem;
+}
+
+
+.featured-studio-cta:hover{
+    border-color: var(--highlight);
+    color: var(--highlight);
+}
+
+
+
+
+  
+  
