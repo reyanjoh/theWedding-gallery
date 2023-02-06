@@ -1,49 +1,95 @@
 .Gallery{
-    position: relative;
-    z-index: 9;
-    min-height: 80vh;
-    /* overflow-x: hidden; */
-  }
+  position: relative;
+  z-index: 9;
+  min-height: 80vh;
+  /* overflow-x: hidden; */
+}
+
+/* .scroll{
+    margin-top: 13rem;
+} */
+
+.card-section{
   
-  /* .scroll{
-     margin-top: 13rem;
-  } */
+  overflow-x: hidden;
+  width: 100vw;
   
-  .card-section{
-   
-    overflow-x: hidden;
-    width: 100vw;
-    
-  }
+}
+
+
+.studio-names{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: var(--font-tiny);
+}
+
+.studio-name{
+
+  color: rgb(117, 117, 117);
+}
+
+
+.GalleryCardSlider{
+  /* background-color:  red; */
+  width: 100vw;
+  height: 25rem;
+}
+
+.GalleryCardSlider > img{
+  transition: .6s;
+  object-fit: cover;
+  object-position: center;
+  box-shadow:  0 20px 20px #c5c5c5
+}
+
+.GalleryCardSlider > img:hover{
+  transform: scale(1.01);
+}
+
+.GalleryCardSection{
+  columns: 3 20rem;
+}
+
+.GalleryCard{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.gallery-card-img-frame{
+  position: relative;
+  width: 100%;
+  /* height: 15rem; */
+  margin: 0;
+}
+
+.gallery-card-img-date{
+  position: absolute;
+  background-color: white;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: .4rem .7rem;
+  font-weight: 700;
+}
+
+.gallery-card-img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
   
-  
-  .studio-names{
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: var(--font-tiny);
-  }
-  
-  .studio-name{
-  
-    color: rgb(117, 117, 117);
-  }
-  
-  
-  .GalleryCard{
-    /* background-color:  red; */
-    width: 100vw;
-    height: 25rem;
-  }
-  
-  .GalleryCard > img{
-    transition: .6s;
-    object-fit: cover;
-    object-position: center;
-    box-shadow:  0 20px 20px #c5c5c5
-  }
-  
-  .GalleryCard > img:hover{
-    transform: scale(1.01);
-  }
+}
+
+.gallery-card-info{
+  text-align: center;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 1rem;
+ 
+}
+
+.gallery-card-title{
+  font-weight: 400;
+  letter-spacing: 1px;
+}
