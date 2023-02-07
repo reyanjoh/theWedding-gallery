@@ -1,6 +1,6 @@
 
 .career-hiring-section{
-    min-height: 70vh;
+    min-height: 60vh;
 }
 
 
@@ -22,7 +22,6 @@
     height: 20rem;
     /* aspect-ratio: 3/2;
     object-fit: cover; */
-    
 }
 
 .career-hiring-section > .career-hiring{
@@ -31,13 +30,19 @@
 
 .career-heading{
     font-size: var(--font-medum);
+    margin: 0;
     font-weight: 500;
 }
 
 .career-p{
     font-size: var(--font-small);
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    /* letter-spacing: normal; */
+}
+
+.career-p a{
+    color:  var(--highlight);
 }
 
 .apply-here{
