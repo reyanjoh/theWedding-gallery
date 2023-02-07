@@ -1,9 +1,19 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import './Career.css'
 
 const Career = () => {
   return (
     <div className='Career'>
+        <Helmet>
+            <title>Career | The Wedding Gallery</title>
+            <link rel="canonical" href="https://theweddinggallery.pages.dev/career" />
+            <meta name="description" content="The Wedding Gallery Career Page" />
+            <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
+            <meta name="author" content="Reyan John Narvaja" />
+        </Helmet>
+
+
         <section className='career-hiring-section flex'>
             <div className="career-img-div">
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Career" />
