@@ -1,0 +1,45 @@
+
+.career-hiring-section{
+    min-height: 70vh;
+}
+
+
+.career-hiring-section>div{
+    /* background-color: aquamarine; */
+
+    width: auto;
+}
+
+.career-hiring-section>.career-img-div{
+    margin-left: var(--space-wide);
+    /* overflow: hidden; */
+    /* background-color: aquamarine; */
+    margin-right: 3rem;
+}
+
+
+.career-hiring-section>.career-img-div>img{
+    height: 20rem;
+    /* aspect-ratio: 3/2;
+    object-fit: cover; */
+    
+}
+
+.career-hiring-section > .career-hiring{
+    padding-right: var(--space-wide);
+}
+
+.career-heading{
+    font-size: var(--font-medum);
+    font-weight: 500;
+}
+
+.career-p{
+    font-size: var(--font-small);
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.apply-here{
+    text-decoration: underline;
+}
