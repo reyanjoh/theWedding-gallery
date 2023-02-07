@@ -11,8 +11,8 @@ const GalleryCardSection = () => {
         <GalleryCard />
         <GalleryCard />
         <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
+        {/* <GalleryCard />
+        <GalleryCard /> */}
     </section>
   )
 }

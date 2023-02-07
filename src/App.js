@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import UnderDevelopment from './components/UnderDevelopment';
 import About from './pages/about/About';
+import Career from './pages/career/Career';
 import Gallery from './pages/gallery/Gallery';
 import Home from './pages/home/Home';
 
@@ -21,7 +22,7 @@ function App() {
         <Route path='/studio-listing' element={<Gallery />}/>
         <Route path='/contact' element={<Gallery />}/>
         <Route path='/blogs' element={<Gallery />}/>
-        <Route path='/career' element={<Gallery />}/>
+        <Route path='/career' element={<Career />}/>
       </Routes>
 
       <Footer />
