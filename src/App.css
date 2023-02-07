@@ -192,6 +192,10 @@ footer{
   height: 30rem;
 } */
 
+.NotFound{
+  min-height: 70vh;
+}
+
 @media screen and (max-width: 360px) {
   :root{  
   

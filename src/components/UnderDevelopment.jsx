@@ -6,6 +6,7 @@ const UnderDevelopment = () => {
         textAlign: 'center',
         width: '100%',
         position: 'fixed',
+        bottom: '0',
         zIndex: '20',
         backgroundColor: 'black', 
         opacity: '.8',

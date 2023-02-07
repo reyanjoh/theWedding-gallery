@@ -16,7 +16,7 @@ const Career = () => {
 
                 <h2 className='career-heading'>WHO ARE WE LOOKING FOR?</h2>
                 <p className='career-p'>
-                    We are not actively hiring right now, but if you'd like to be considered for a future role on our Support team, content writing, design, etc. please <a className='apply-here' href='/'>Apply Here</a>
+                    We are not actively hiring right now, but if you'd like to be considered for a future role on our Support team, content writing, design, etc. please <a className='apply-here not-available' href='/career/application-form'>Apply Here</a>
                 </p>
             </div>
         </section>
