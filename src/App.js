@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import NotFound from './components/NotFound';
 import UnderDevelopment from './components/UnderDevelopment';
 import About from './pages/about/About';
 import Career from './pages/career/Career';
@@ -23,6 +24,8 @@ function App() {
         <Route path='/contact' element={<Gallery />}/>
         <Route path='/blogs' element={<Gallery />}/>
         <Route path='/career' element={<Career />}/>
+
+        <Route path='*' element={<NotFound />}/>
       </Routes>
 
       <Footer />
