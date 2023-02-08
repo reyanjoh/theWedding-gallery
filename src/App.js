@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import NotFound from './components/NotFound';
 import UnderDevelopment from './components/UnderDevelopment';
+import ApplicationForm from './pages/career/applicationForm/ApplicationForm';
 // import About from './pages/about/About';
 // import ApplicationForm from './pages/career/applicationForm/ApplicationForm';
 import Career from './pages/career/Career';
@@ -28,7 +29,7 @@ function App() {
         {/* <Route path='/blogs' element={<Gallery />}/> */}
 
         <Route path='/career' element={<Career />}/>
-          {/* <Route path='/career/application-form' element={<ApplicationForm />} /> */}
+          <Route path='/career/application-form' element={<ApplicationForm />} />
 
         <Route path='*' element={<NotFound />}/>
       </Routes>
