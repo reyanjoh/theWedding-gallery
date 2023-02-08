@@ -9,7 +9,7 @@ const Contact = () => {
             <link rel="canonical" href="https://theweddinggallery.pages.dev/contact" />
             <meta name="description" content="The Wedding Gallery Contact Page" />
             <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
-            <meta name="author" content="Reyan John Narvaja" />
+            <meta name="author" content="Reyan John Narvaja"/>
         </Helmet>
 
 
