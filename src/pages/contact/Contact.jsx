@@ -7,8 +7,8 @@ const Contact = () => {
         <Helmet>
             <title>Contact | The Wedding Gallery</title>
             <link rel="canonical" href="https://theweddinggallery.pages.dev/contact" />
-            <meta name="description" content="The Wedding Gallery Contact Page" />
-            <meta name="keywords" content="The Wedding Gallery printing, content writing, design service partnership " />
+            <meta name="description" content="Partnership with The Wedding Gallery. printing, content writing, design service in Bukidnon" />
+            <meta name="keywords" content="The Wedding Gallery, printing, content writing, design service partnership " />
             <meta name="author" content="Reyan John Narvaja"/>
         </Helmet>
 
