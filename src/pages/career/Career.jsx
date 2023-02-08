@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import './Career.css'
 
 const Career = () => {
   return (
@@ -8,8 +7,8 @@ const Career = () => {
         <Helmet>
             <title>Career | The Wedding Gallery</title>
             <link rel="canonical" href="https://theweddinggallery.pages.dev/career" />
-            <meta name="description" content="The Wedding Gallery Career Page" />
-            <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
+            <meta name="description" content="Join us at The Wedding Gallery we are consists of various of creatives that are passionate on influencing the future of our local photographers in Bukidnon." />
+            <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery, Wedding photographers, photographers in Bukidnon,Bukidnon photographers, Bukidnon photography" />
             <meta name="author" content="Reyan John Narvaja" />
         </Helmet>
 
