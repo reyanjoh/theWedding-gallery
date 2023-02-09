@@ -6,11 +6,12 @@ import Header from './components/Header';
 import NotFound from './components/NotFound';
 import UnderDevelopment from './components/UnderDevelopment';
 import ApplicationForm from './pages/career/applicationForm/ApplicationForm';
-// import About from './pages/about/About';
+import About from './pages/about/About';
 // import ApplicationForm from './pages/career/applicationForm/ApplicationForm';
 import Career from './pages/career/Career';
 import Contact from './pages/contact/Contact';
 import Gallery from './pages/gallery/Gallery';
+import GalleryPost from './pages/gallery/components/galleryPost/GalleryPost';
 import Home from './pages/home/Home';
 
 function App() {
@@ -21,15 +22,27 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/gallery' element={<Gallery />}/>
-        {/* <Route path='/about' element={<About />}/> */}
+
+        <Route  path='/gallery'>
+          <Route index element={<Gallery />}/>
+          <Route path='/gallery/:id' element={<GalleryPost />}/>
+          <Route path='/gallery/:title/:id' element={<GalleryPost />}/>
+
+          {/* <Route path='/post/:id' element={<GalleryPost />}/> */}
+          
+        </Route>
+
+        <Route path='/about' element={<About />}/>
         {/* <Route path='/studio-listing' element={<StudioListing />}/> */}
         <Route path='/contact' element={<Contact />}/>
 
         {/* <Route path='/blogs' element={<Gallery />}/> */}
 
-        <Route path='/career' element={<Career />}/>
+        <Route path='/career'>
+          <Route index element={<Career />} />
           <Route path='/career/application-form' element={<ApplicationForm />} />
+        </Route>
+          
 
         <Route path='*' element={<NotFound />}/>
       </Routes>

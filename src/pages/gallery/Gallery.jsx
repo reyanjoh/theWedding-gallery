@@ -16,13 +16,13 @@ const Gallery = () => {
         </Helmet>
         {/* <span className='font-tiny scroll-mgs margin-bottom-1rem'>-shift+scroll-</span> */}
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
-            <a href='/' id='card1'><GalleryCardSlider srcs={'https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
-            <a href='/' id='card2'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
-            <a href='/' id='card3'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80'} /></a>
-            <a href='/' id='card4'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'} /></a>
-            <a href='/' id='card5'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1531898611418-0ceb51a8e0ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80'} /></a>
-            <a href='/' id='card6'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1519379169146-d4b170447caa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
-            <a href='/' id='card7'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card1'><GalleryCardSlider srcs={'https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card2'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card3'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card4'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card5'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1531898611418-0ceb51a8e0ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card6'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1519379169146-d4b170447caa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
+            <a href={`/gallery/:${1}`} id='card7'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
         </div>
         
         <div className='studio-names'>
