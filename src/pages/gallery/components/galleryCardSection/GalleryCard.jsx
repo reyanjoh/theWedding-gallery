@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const GalleryCard = () => {
+const GalleryCard = ({data, title, id, body}) => {
   return (
     <div className='GalleryCard'>
-      <a href="/" rel="noopener noreferrer">
+      <a href={`gallery/${title}/:${id}`} rel="noopener noreferrer">
         <div className="gallery-card-img-frame">
           <span className="gallery-card-img-date">
             21 <br/>
@@ -15,14 +15,14 @@ const GalleryCard = () => {
 
         <div className="gallery-card-info">
           <span className='gallery-card-title'>
-            An Intimate Tangerine Wedding Brought by 6 Years of Love
+            {title || 'An Intimate Tangerine Wedding Brought by 6 Years of Love'}
           </span>
           <div className='gallery-card-writer flex flex-justify-center font-tiny'>
               By <div className='author-profile'></div> author-name 
           </div>
   
           <p className="gallery-card-p font-tiny">
-            Every couple needs to adjust the number of their wedding guests to follow the restrictions during the pandemic. Some will embrace the i. Every couple needs to adjust the number of their wedding guests to follow the restrictions during the pandemic. Some will embrace the i. Every couple needs to adjust the number of their wedding guests to follow the restrictions during the pandemic. Some will embrace the i.
+           {body}
           </p>
         </div>
       </a>
