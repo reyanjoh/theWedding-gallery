@@ -1,10 +1,14 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import useFetch from '../../util/api/useFetch'
 import GalleryCardSection from './components/galleryCardSection/GalleryCardSection'
 import GalleryCardSlider from './components/GalleryCardSlider'
 
 
 const Gallery = () => {
+
+  const {data, loading, err} = useFetch('https://thewedding-gallery-headless-cms.onrender.com/api/active-gallery-page-sliders?populate=*')
+
   return (
     <div className='Gallery bg-color-light flex flex-column flex-align-center flex-justify-center'>
         <Helmet>
@@ -16,13 +20,11 @@ const Gallery = () => {
         </Helmet>
         {/* <span className='font-tiny scroll-mgs margin-bottom-1rem'>-shift+scroll-</span> */}
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
-            <a href={`/gallery/:${1}`} id='card1'><GalleryCardSlider srcs={'https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
-            <a href={`/gallery/:${1}`} id='card2'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
-            <a href={`/gallery/:${1}`} id='card3'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80'} /></a>
-            <a href={`/gallery/:${1}`} id='card4'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'} /></a>
-            <a href={`/gallery/:${1}`} id='card5'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1531898611418-0ceb51a8e0ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80'} /></a>
-            <a href={`/gallery/:${1}`} id='card6'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1519379169146-d4b170447caa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
-            <a href={`/gallery/:${1}`} id='card7'><GalleryCardSlider srcs={'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'} /></a>
+            {data && data.data[0].attributes.gallery_page_sliders.data.map((data)=>{
+              // console.log(data.attributes);
+              return (<a href={`https://${data.attributes.studioPageLink}`} id='card1'><GalleryCardSlider studioName={data.attributes.studioName} srcs={data.attributes.sliderImglink} /></a>);
+            })}
+            
         </div>
         
         <div className='studio-names'>

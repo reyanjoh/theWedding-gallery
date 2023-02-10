@@ -21,7 +21,7 @@ const GalleryCardSection = () => {
 
 
         {data && data.map((data)=>{
-          return <GalleryCard data={data} title={data.title} id={data.id} body={data.body}/>
+          return <GalleryCard key={data.id} data={data} title={data.title} id={data.id} body={data.body}/>
         })}
         
     </section>
