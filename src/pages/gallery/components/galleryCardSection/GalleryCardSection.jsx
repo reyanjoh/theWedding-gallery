@@ -2,9 +2,9 @@ import useFetch from '../../../../util/api/useFetch';
 import GalleryCard from './GalleryCard'
 
 const GalleryCardSection = () => {
-  const url = 'https://jsonplaceholder.typicode.com/posts';
+  const url = 'https://thewedding-gallery-headless-cms.onrender.com/api/gallery-posts?populate=*';
 
-  const {data, loading, err} = useFetch(url);
+  const {data} = useFetch(url);
   
   
   return (
@@ -18,10 +18,11 @@ const GalleryCardSection = () => {
         <GalleryCard title={'sad'} id={1}/>
         <GalleryCard title={'sad'} id={1}/>
         <GalleryCard title={'sad'} id={1}/> */}
+        {/* {data && console.log(data.data)} */}
 
-
-        {data && data.map((data)=>{
-          return <GalleryCard key={data.id} data={data} title={data.title} id={data.id} body={data.body}/>
+        {data && data.data.map((data)=>{
+          // console.log(data.data);
+          return (<GalleryCard key={data.id} data={data}/>)          
         })}
         
     </section>

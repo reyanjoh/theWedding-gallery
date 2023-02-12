@@ -10,10 +10,10 @@ const Nav = () => {
         <div className="menu">
           <NavLink className={'nav padding-0-1 font-small'} to={'/'}>Home</NavLink>
           <NavLink className={'nav padding-0-1 font-small'} to={'/gallery'}>Gallery</NavLink>
-          <NavLink className={'nav padding-0-1 font-small'} to={'/about'}>About</NavLink>
-          <NavLink className={'nav padding-0-1 font-small not-available'} to={'/studio-listing'}>Studio Listing</NavLink>
-          <NavLink className={'nav padding-0-1 font-small'} to={'/contact'}>Contact</NavLink>
           <NavLink className={'nav padding-0-1 font-small not-available'} to={'/blogs'}>Blogs</NavLink>   
+          <NavLink className={'nav padding-0-1 font-small not-available'} to={'/studio-listing'}>Studio Listing</NavLink>
+          <NavLink className={'nav padding-0-1 font-small'} to={'/about'}>About</NavLink>
+          <NavLink className={'nav padding-0-1 font-small'} to={'/contact'}>Contact</NavLink>
           <NavLink className={'nav padding-0-1 font-small'} to={'/career'}>Career</NavLink>
         </div>
     </nav>

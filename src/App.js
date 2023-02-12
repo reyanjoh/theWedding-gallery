@@ -26,17 +26,17 @@ function App() {
         <Route  path='/gallery'>
           <Route index element={<Gallery />}/>
           <Route path='/gallery/:id' element={<GalleryPost />}/>
-          <Route path='/gallery/:title/:id' element={<GalleryPost />}/>
+          <Route path='/gallery/:studio/:id' element={<GalleryPost />}/>
 
           {/* <Route path='/post/:id' element={<GalleryPost />}/> */}
           
         </Route>
 
-        <Route path='/about' element={<About />}/>
-        {/* <Route path='/studio-listing' element={<StudioListing />}/> */}
-        <Route path='/contact' element={<Contact />}/>
-
         {/* <Route path='/blogs' element={<Gallery />}/> */}
+
+        {/* <Route path='/studio-listing' element={<StudioListing />}/> */}
+        <Route path='/about' element={<About />}/>
+        <Route path='/contact' element={<Contact />}/>
 
         <Route path='/career'>
           <Route index element={<Career />} />

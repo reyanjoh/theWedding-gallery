@@ -32,7 +32,7 @@ const Contact = () => {
                 <p className='career-p'>
                     We love supporting education and events from communities around the world.To apply for a sponsorship, click here
                 </p> */}
-                <h2 className='career-heading'>LAB PARTNERSHIPS</h2>
+                <h2 className='career-heading'>PARTNERSHIPS</h2>
                 <p className='career-p'>
                     To offer your print services and apply to be a lab partner with The Wedding Gallery, message or call <a href="tel:+(65)976 173 1273">+(65)976 173 1273</a>
                 </p>
