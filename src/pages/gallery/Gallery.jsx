@@ -7,7 +7,7 @@ import GalleryCardSlider from './components/GalleryCardSlider'
 
 const Gallery = () => {
 
-  const {data, loading, err} = useFetch('https://thewedding-gallery-headless-cms.onrender.com/api/active-gallery-page-sliders?populate=*')
+  const {data} = useFetch('https://thewedding-gallery-headless-cms.onrender.com/api/active-gallery-page-sliders?populate=*')
 
   return (
     <div className='Gallery bg-color-light flex flex-column flex-align-center flex-justify-center'>
@@ -22,9 +22,10 @@ const Gallery = () => {
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
             {data && data.data[0].attributes.gallery_page_sliders.data.map((data)=>{
               // console.log(data.attributes);
-              return (<a href={`https://${data.attributes.studioPageLink}`} id='card1'><GalleryCardSlider studioName={data.attributes.studioName} srcs={data.attributes.sliderImglink} /></a>);
+              return (
+                <a target="_blank" rel="noopener noreferrer" href={`https://${data.attributes.studioPageLink}`} key={data.id} id='card1'><GalleryCardSlider data={data} /></a>
+              );
             })}
-            
         </div>
         
         <div className='studio-names'>

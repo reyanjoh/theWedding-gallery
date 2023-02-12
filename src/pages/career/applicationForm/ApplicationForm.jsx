@@ -2,8 +2,8 @@ import React from 'react'
 
 const ApplicationForm = () => {
   return (
-    <div>
-      sad
+    <div className='flex flex-center'>
+      comming soon
     </div>
   )
 }

@@ -9,7 +9,7 @@ const FeaturedStudio = () => {
         </div>
         <section className="flex">
 
-            <img className='featured-studio-img' src="./util/src/imgs/brideandgroom.jpg" alt="" srcset="" />
+            <img className='featured-studio-img' src="./util/src/imgs/brideandgroom.jpg" alt="" />
             
             <div className='featured-studio-client-info-section'>
                 <h3 className='Garamond'>Studio 1 Client</h3>
