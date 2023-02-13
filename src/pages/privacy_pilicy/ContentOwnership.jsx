@@ -4,7 +4,7 @@ const ContentOwnership = () => {
   return (
     <div>
         <span>
-            Ownership of Content
+            hihi
         </span>
         <p className="ContentOwnership">
             When submitting or contributing content to The Wedding Gallery you are stating that you own the content or have the permission of the original content owner to submit or contribute the content to The Wedding Gallery. Except for content owned by you, you may not post, copy, modify, translate, publish, broadcast, transmit, distribute, perform, display, reproduce, or sell any content appearing on or through The Wedding Gallery without obtaining permission from the content owner.
