@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { GalleryCardSliderLoadingScreen } from '../../components/LoadingScreens'
 import useFetch from '../../util/api/useFetch'
 import GalleryCardSection from './components/galleryCardSection/GalleryCardSection'
 import GalleryCardSlider from './components/GalleryCardSlider'
@@ -7,7 +8,7 @@ import GalleryCardSlider from './components/GalleryCardSlider'
 
 const Gallery = () => {
 
-  const {data} = useFetch('https://thewedding-gallery-headless-cms.onrender.com/api/active-gallery-page-sliders?populate=*')
+  const {data, loading} = useFetch('https://thewedding-gallery-headless-cms.onrender.com/api/active-gallery-page-sliders?populate=*')
 
   return (
     <div className='Gallery bg-color-light flex flex-column flex-align-center flex-justify-center'>
@@ -19,6 +20,9 @@ const Gallery = () => {
             <meta name="author" content="Reyan John Narvaja" />
         </Helmet>
         {/* <span className='font-tiny scroll-mgs margin-bottom-1rem'>-shift+scroll-</span> */}
+
+        {loading && <GalleryCardSliderLoadingScreen />}
+
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
             {data && data.data[0].attributes.gallery_page_sliders.data.map((data)=>{
               // console.log(data.attributes);

@@ -1,0 +1,42 @@
+.GalleryCardSliderLoadingScreen{
+    /* background-color: brown; */
+    height: 25rem;
+    width: 100%;
+    padding: 2rem 6rem;
+}
+
+
+.GalleryCardSliderLoadingScreen-studio-name{
+    /* background-color: red; */
+    height: 1.5rem;
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+.GalleryCardSliderLoadingScreen-img{
+    /* background-color: aqua; */
+    height: 23rem;
+    width: 40rem;
+    
+}
+
+
+
+
+
+
+
+.LoadingImagesComponenet{
+	/* background-color: #073D60; */
+	animation: .7s loading-animation linear infinite alternate;
+}
+
+@keyframes loading-animation {
+
+	0% {
+		background-color: rgb(216, 216, 216);
+	}
+	100% {
+		opacity: 0;
+	}
+}

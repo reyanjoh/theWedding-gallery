@@ -1,7 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../../../../util/api/useFetch';
-import {ImagesComponenet, LoadingImagesComponenet} from './component/ImagesComponenet';
+import { ImagesComponenet } from './component/ImagesComponenet';
+import {LoadingImagesComponenet} from '../../../../components/LoadingScreens';
 
 
 const GalleryPost = () => {
@@ -15,6 +16,7 @@ const GalleryPost = () => {
 
       {loading && <LoadingImagesComponenet />}   
       {data && <ImagesComponenet data={data} loading={loading}/>}
+
 
       {/* {data && <LoadingImagesComponenet />} */}
 
