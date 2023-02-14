@@ -107,19 +107,6 @@ code {
 
 
 
-.LoadingImagesComponenet{
-	/* background-color: #073D60; */
-	animation: .7s loading-animation linear infinite alternate;
-}
 
-@keyframes loading-animation {
-
-	0% {
-		background-color: rgb(216, 216, 216);
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
 
