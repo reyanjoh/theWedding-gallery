@@ -5,7 +5,8 @@ const GalleryCard = ({data}) => {
 
   // console.log(data)
   return (
-    <div className='GalleryCard'>
+    <>
+      {data? <div className='GalleryCard'>
       <a href={`/gallery/${data.id}`} rel="noopener noreferrer">
         <div className="gallery-card-img-frame">
           <span className="gallery-card-img-date">
@@ -30,7 +31,8 @@ const GalleryCard = ({data}) => {
           </p>
         </div>
       </a>
-    </div>
+    </div> : null}
+    </>
   )
 }
 

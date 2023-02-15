@@ -21,15 +21,15 @@ const Gallery = () => {
         </Helmet>
         {/* <span className='font-tiny scroll-mgs margin-bottom-1rem'>-shift+scroll-</span> */}
 
-        {loading && <GalleryCardSliderLoadingScreen />}
+        {loading ? <GalleryCardSliderLoadingScreen /> : null}
 
         <div id='slider' className='flex flex-row card-section snap-x-scroll'>
-            {data && data.data[0].attributes.gallery_page_sliders.data.map((data)=>{
+            {data ? data.data[0].attributes.gallery_page_sliders.data.map((data)=>{
               // console.log(data.attributes);
               return (
                 <a target="_blank" rel="noopener noreferrer" href={`https://${data.attributes.studioPageLink}`} key={data.id} id='card1'><GalleryCardSlider data={data} /></a>
               );
-            })}
+            }): null}
         </div>
         
         <div className='studio-names'>
