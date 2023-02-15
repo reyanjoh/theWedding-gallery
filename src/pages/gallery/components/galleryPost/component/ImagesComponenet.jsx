@@ -9,10 +9,10 @@ export const ImagesComponenet = ({data, loading}) => {
       {loading && 'Loading . . .'}
       {console.log(data.data.attributes)}
         <Helmet>
-          <title>{`${data.data.attributes.eventDescription} | The Wedding Gallery`}</title>
+          <title>{`${data.data.attributes.title} | The Wedding Gallery`}</title>
           <meta name="title" content={`${data.data.attributes.title} | The Wedding Gallery`} />
           <link rel="canonical" href={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
-          <meta name="description" content={data.data.attributes.title} />
+          <meta name="description" content={data.data.attributes.eventDescription} />
           <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
           <meta name="author" content="Reyan John Narvaja" />
 
@@ -27,7 +27,7 @@ export const ImagesComponenet = ({data, loading}) => {
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
           <meta property="twitter:title" content={`${data.data.attributes.title} | The Wedding Gallery`} />
-          <meta property="twitter:description" content={data.data.attributes.title} />
+          <meta property="twitter:description" content={data.data.attributes.eventDescription} />
           <meta property="twitter:image" content={data.data.attributes.coverLink} />
         </Helmet>
 
