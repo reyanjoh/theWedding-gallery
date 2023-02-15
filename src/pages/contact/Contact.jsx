@@ -20,12 +20,12 @@ const Contact = () => {
             <div className="career-hiring">
                 <h1 className='career-heading'>MARKETING</h1>
                 <p className='career-p'>
-                    For Community and Collaborations, email <a href="mailto:theweddinggallery.business@gmail.com">theweddinggallery.business@gmail.com</a>
+                    For Community and Collaborations, email <a href="mailto:theweddinggallery.business.marketing@gmail.com">theweddinggallery.business.marketing@gmail.com</a>
                 </p>
 
                 <h2 className='career-heading'>SUPPORT</h2>
                 <p className='career-p'>
-                    For Questions, message us via the facebook messenger or email <a href="mailto:theweddinggallery.business@gmail.com">theweddinggallery.business@gmail.com</a>
+                    For Questions, message us via the facebook messenger or email <a href="mailto:theweddinggallery.business.support@gmail.com">theweddinggallery.business.support@gmail.com</a>
                 </p>
 
                 {/* <h2 className='career-heading'>WORKSHOPS & SPONSORSHIP</h2>
@@ -38,7 +38,7 @@ const Contact = () => {
                 </p>
                 <h2 className='career-heading'>GENERAL INQUIRIES</h2>
                 <p className='career-p'>
-                    For all other inquiries email <a href="mailto:theweddinggallery.business@gmail.com">theweddinggallery.business@gmail.com</a>
+                    For all other inquiries email <a href="mailto:theweddinggallery.business.general@gmail.com">theweddinggallery.business.general@gmail.com</a>
                 </p>
             </div>
         </section>
