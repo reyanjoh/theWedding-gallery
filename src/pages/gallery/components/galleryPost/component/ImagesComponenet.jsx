@@ -4,10 +4,10 @@ import React from 'react'
 export const ImagesComponenet = ({data, loading}) => {
   return (
     <>   
-      {loading && 'Loading . . .'}
+      {/* {loading && 'Loading . . .'} */}
         <h1>{data && data.data.attributes.title}</h1>
-        <h2>{data && data.data.attributes.eventDescription}</h2>
-      <div className='ImagesComponenet'>
+        <h2 className='padding-0-6 ImagesComponenet-h2'>{data && data.data.attributes.eventDescription}</h2>
+      <div className='padding-0-6 ImagesComponenet'>
         {/* {data && console.log(data.data.attributes)} */}
         {data && [<img key={uuidv4()} src={data.data.attributes.imgLink1} alt="" />,
                   <img key={uuidv4()} src={data.data.attributes.imgLink2} alt="" />,
@@ -19,7 +19,10 @@ export const ImagesComponenet = ({data, loading}) => {
                   <img key={uuidv4()} src={data.data.attributes.imgLink8} alt="" />,
                   <img key={uuidv4()} src={data.data.attributes.imgLink9} alt="" />,
                   <img key={uuidv4()} src={data.data.attributes.imgLink10} alt="" />]}
-      </div>
+      </div>    
+      {console.log(data.data.attributes)}
+
+      <a className='ImagesComponenet-view-more' href={`http://${data.data.attributes.authorPageLink}`} target="_blank" rel="noopener noreferrer">View More</a>
     </>
   )
 }
