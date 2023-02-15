@@ -229,10 +229,18 @@ footer{
 }
 
 .ImagesComponenet-view-more{
-  background-color: var(--highlight);
-  padding: 1rem 28.57rem;
+  /* background-color: var(--highlight); */
+  padding: 1rem 28.20rem;
   margin: 1rem 0;
+  text-transform: uppercase;
+  border: 1px solid black;
+  transition: .2;
 
+}
+
+.ImagesComponenet-view-more:hover{
+  color: var(--highlight);
+  border-color: var(--highlight);
 }
 
 
