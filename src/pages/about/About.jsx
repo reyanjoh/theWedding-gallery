@@ -11,7 +11,7 @@ const About = () => {
       <Helmet>
         <title>About | The Wedding Gallery</title>
         <link rel="canonical" href="https://theweddinggallery.pages.dev/about" />
-        <meta name="description" content="The Wedding Gallery About a wedding resource dedicated to style, taste, and beauty" />
+        <meta name="description" content="Join The Wedding Gallery, we are wedding resource dedicated to style, taste, and beauty" />
         <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
         <meta name="author" content="Reyan John Narvaja" />
       </Helmet>
