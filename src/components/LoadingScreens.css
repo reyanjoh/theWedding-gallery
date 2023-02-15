@@ -22,21 +22,60 @@
 
 
 
+.GalleryCardLoadingScreen{
+    height: 29rem;
+    /* width: 30rem; */
+}
+
+.date-loading{
+    height: .5rem;
+    width: 2rem;
+}
+
+
+.gallery-card-img-loading{
+    background-color: rgb(241, 241, 241);
+    height: 18rem;
+    width: 100%;
+}
+
+.gallery-card-title-loading{
+    height: 2rem;
+    width: 20rem;
+}
+
+.gallery-card-writer-loading {
+    margin: 1rem 0;
+}
+
+.author-name-loading{
+    height: 1rem;
+    width: 5rem;
+}
+
+.gallery-card-p-loading{
+    height: 1rem;
+    margin-bottom: .5rem;
+}
+
+
+
 
 
 
 
 .LoadingImagesComponenet{
 	/* background-color: #073D60; */
+    background-color: rgb(216, 216, 216);
 	animation: .7s loading-animation linear infinite alternate;
 }
 
 @keyframes loading-animation {
 
 	0% {
-		background-color: rgb(216, 216, 216);
+		opacity: 1;
 	}
 	100% {
-		opacity: 0;
+		opacity: .1;
 	}
 }

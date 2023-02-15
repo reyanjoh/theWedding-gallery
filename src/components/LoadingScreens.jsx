@@ -54,3 +54,33 @@ export const GalleryCardSliderLoadingScreen = () => {
 }
 
 
+
+export const GalleryCardLoadingScreen = () => {
+  return (
+    <div className='GalleryCardLoadingScreen'>
+      <div className="gallery-card-img-frame">
+
+        <span className="LoadingImagesComponenet gallery-card-img-date">
+          <div className="date-loading day-loading"></div>
+            <br/>
+          <div className="date-loading month-loading"></div>
+        </span>
+
+        <div className='gallery-card-img-loading'></div>
+
+      </div>
+
+      <div className="gallery-card-info">
+        <div className='LoadingImagesComponenet gallery-card-title-loading'></div>
+
+        <div className='gallery-card-writer-loading flex flex-justify-center font-tiny'>
+              <div className='LoadingImagesComponenet author-profile'></div>  <div className='LoadingImagesComponenet author-name-loading'> </div>
+        </div>
+
+        <div className="LoadingImagesComponenet gallery-card-p-loading" ></div>
+        <div className="LoadingImagesComponenet gallery-card-p-loading" ></div>
+        <div className="LoadingImagesComponenet gallery-card-p-loading last" ></div>
+      </div>
+    </div>
+  )
+}
