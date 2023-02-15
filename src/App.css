@@ -214,9 +214,25 @@ footer{
 
 
 .ImagesComponenet{
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 1rem;
+  columns: 25rem;
+}
+
+.ImagesComponenet-h2{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.ImagesComponenet > img{
+  width: 31rem;
+  margin: .5rem 0;
+}
+
+.ImagesComponenet-view-more{
+  background-color: var(--highlight);
+  padding: 1rem 28.57rem;
+  margin: 1rem 0;
+
 }
 
 
