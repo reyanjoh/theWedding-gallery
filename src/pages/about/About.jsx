@@ -10,8 +10,6 @@ const About = () => {
     <div className='About'>
       <Helmet>
         
-
-
           {/* <!-- Primary Meta Tags --> */}
         <title>About | The Wedding Gallery</title>
         <meta name="title" content="About | The Wedding Gallery" />

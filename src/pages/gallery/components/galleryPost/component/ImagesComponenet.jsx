@@ -7,7 +7,7 @@ export const ImagesComponenet = ({data, loading}) => {
     <>   
 
       {loading && 'Loading . . .'}
-      {console.log(data.data.attributes)}
+      {/* {console.log(data.data.attributes)} */}
         <Helmet>
           <title>{`${data.data.attributes.title} | The Wedding Gallery`}</title>
           <meta name="title" content={`${data.data.attributes.title} | The Wedding Gallery`} />
