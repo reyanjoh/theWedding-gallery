@@ -7,36 +7,38 @@ export const ImagesComponenet = ({data, loading}) => {
     <>   
 
       {loading && 'Loading . . .'}
+      {console.log(data.data.attributes)}
         <Helmet>
-          <title>{`${data.data.eventDescription} | The Wedding Gallery`}</title>
-          <meta name="title" content={`${data.data.title} | The Wedding Gallery`} />
+          <title>{`${data.data.attributes.eventDescription} | The Wedding Gallery`}</title>
+          <meta name="title" content={`${data.data.attributes.title} | The Wedding Gallery`} />
           <link rel="canonical" href={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
-          <meta name="description" content={data.data.eventDescription} />
+          <meta name="description" content={data.data.attributes.title} />
           <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
           <meta name="author" content="Reyan John Narvaja" />
 
           {/* <!-- Open Graph / Facebook --> */}
-          <meta property="og:type" content="website" />
+          <meta property="og:type" content="blog" />
           <meta property="og:url" content={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
-          <meta property="og:title" content={`${data.data.title} | The Wedding Gallery`} />
-          <meta property="og:description" content={data.data.eventDescription} />
-          <meta property="og:image" content={data.data.coverLink} />
+          <meta property="og:title" content={`${data.data.attributes.title} | The Wedding Gallery`} />
+          <meta property="og:description" content={data.data.attributes.title} />
+          <meta property="og:image" content={data.data.attributes.coverLink} />
 
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
-          <meta property="twitter:title" content={`${data.data.title} | The Wedding Gallery`} />
-          <meta property="twitter:description" content={data.data.eventDescription} />
-          <meta property="twitter:image" content={data.data.coverLink} />
+          <meta property="twitter:title" content={`${data.data.attributes.title} | The Wedding Gallery`} />
+          <meta property="twitter:description" content={data.data.attributes.title} />
+          <meta property="twitter:image" content={data.data.attributes.coverLink} />
         </Helmet>
 
         
   
+        {/* {console.log(data.data.attributes.eventDescription)} */}
       
         <h1>{data && data.data.attributes.title}</h1>
         <h2 className='padding-0-6 ImagesComponenet-h2'>{data && data.data.attributes.eventDescription}</h2>
       <div className='padding-0-6 ImagesComponenet'>
-        {/* {data && console.log(data.data.attributes)} */}
+
         {data && [<img key={uuidv4()} src={data.data.attributes.imgLink1} alt="" />,
                   <img key={uuidv4()} src={data.data.attributes.imgLink2} alt="" />,
                   <img key={uuidv4()} src={data.data.attributes.imgLink3} alt="" />,

@@ -22,7 +22,7 @@ const GalleryCardSection = () => {
         {/* {data && console.log(data.data)} */}
 
 
-        {loading && <div className='GalleryCardLoadingScreen-div flex flex-row'><GalleryCardLoadingScreen /> <GalleryCardLoadingScreen /> <GalleryCardLoadingScreen /></div>}
+        {loading && <div className='GalleryCardLoadingScreen flex flex-row'><GalleryCardLoadingScreen /> <GalleryCardLoadingScreen /> <GalleryCardLoadingScreen /></div>}
 
         {data && data.data.map((data)=>{
           return (<GalleryCard key={data.id} data={data}/>)          
