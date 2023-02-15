@@ -25,7 +25,7 @@ const GalleryCardSection = () => {
         {loading && [<GalleryCardLoadingScreen />, <GalleryCardLoadingScreen />, <GalleryCardLoadingScreen />]}
 
         {data && data.data.map((data)=>{
-          console.log(data.data);
+          // console.log(data.data);
           return (<GalleryCard key={data.id} data={data}/>)          
         })}
         
