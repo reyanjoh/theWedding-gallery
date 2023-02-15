@@ -136,6 +136,16 @@ a{
   top: -8rem;
 }
 
+.submit{
+  position: absolute;
+  z-index: 10;
+  right: 11rem;
+  bottom: 6rem;
+  padding:.5rem 1rem;
+  border: 1px solid var(--highlight);
+  color: var(--highlight);
+}
+
 nav{
   margin-top: 3.5rem; 
 }
