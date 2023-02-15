@@ -1,10 +1,38 @@
 import { v4 as uuidv4 } from 'uuid';
+import { Helmet } from 'react-helmet'
 import React from 'react'
 
 export const ImagesComponenet = ({data, loading}) => {
   return (
     <>   
-      {/* {loading && 'Loading . . .'} */}
+
+      {loading && 'Loading . . .'}
+        <Helmet>
+          <title>{`${data.data.eventDescription} | The Wedding Gallery`}</title>
+          <meta name="title" content={`${data.data.title} | The Wedding Gallery`} />
+          <link rel="canonical" href={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
+          <meta name="description" content={data.data.eventDescription} />
+          <meta name="keywords" content="Wedding, Gallery, The Wedding Gallery" />
+          <meta name="author" content="Reyan John Narvaja" />
+
+          {/* <!-- Open Graph / Facebook --> */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
+          <meta property="og:title" content={`${data.data.title} | The Wedding Gallery`} />
+          <meta property="og:description" content={data.data.eventDescription} />
+          <meta property="og:image" content={data.data.coverLink} />
+
+          {/* <!-- Twitter --> */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content={`https://theweddinggallery.pages.dev/gallery/${data.id}`} />
+          <meta property="twitter:title" content={`${data.data.title} | The Wedding Gallery`} />
+          <meta property="twitter:description" content={data.data.eventDescription} />
+          <meta property="twitter:image" content={data.data.coverLink} />
+        </Helmet>
+
+        
+  
+      
         <h1>{data && data.data.attributes.title}</h1>
         <h2 className='padding-0-6 ImagesComponenet-h2'>{data && data.data.attributes.eventDescription}</h2>
       <div className='padding-0-6 ImagesComponenet'>
