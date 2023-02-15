@@ -20,7 +20,7 @@ export const ImagesComponenet = ({data, loading}) => {
                   <img key={uuidv4()} src={data.data.attributes.imgLink9} alt="" />,
                   <img key={uuidv4()} src={data.data.attributes.imgLink10} alt="" />]}
       </div>    
-      {console.log(data.data.attributes)}
+      
 
       <a className='ImagesComponenet-view-more' href={`http://${data.data.attributes.authorPageLink}`} target="_blank" rel="noopener noreferrer">View More</a>
     </>

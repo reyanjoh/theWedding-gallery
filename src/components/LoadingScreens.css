@@ -24,8 +24,11 @@
 
 .GalleryCardLoadingScreen{
     height: 29rem;
+    margin: 0 1rem;
     /* width: 30rem; */
 }
+
+
 
 .date-loading{
     height: .5rem;
