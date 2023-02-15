@@ -1,10 +1,11 @@
+import { GalleryCardLoadingScreen } from '../../../../components/LoadingScreens';
 import useFetch from '../../../../util/api/useFetch';
 import GalleryCard from './GalleryCard'
 
 const GalleryCardSection = () => {
   const url = 'https://thewedding-gallery-headless-cms.onrender.com/api/gallery-posts?populate=*';
 
-  const {data} = useFetch(url);
+  const {data, loading} = useFetch(url);
   
   
   return (
@@ -20,8 +21,11 @@ const GalleryCardSection = () => {
         <GalleryCard title={'sad'} id={1}/> */}
         {/* {data && console.log(data.data)} */}
 
+
+        {loading && [<GalleryCardLoadingScreen />, <GalleryCardLoadingScreen />, <GalleryCardLoadingScreen />]}
+
         {data && data.data.map((data)=>{
-          // console.log(data.data);
+          console.log(data.data);
           return (<GalleryCard key={data.id} data={data}/>)          
         })}
         
