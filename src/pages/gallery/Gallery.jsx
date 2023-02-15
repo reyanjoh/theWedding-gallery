@@ -15,8 +15,8 @@ const Gallery = () => {
         <Helmet>
             <title>Gallery | The Wedding Gallery</title>
             <link rel="canonical" href="https://theweddinggallery.pages.dev/example" />
-            <meta name="description" content="The Wedding Gallery" />
-            <meta name="keywords" content="See the works of our top rated Wedding Photographers in Bukidnon." />
+            <meta name="description" content="See the works of our top rated Wedding Photographers in Bukidnon." />
+            <meta name="keywords" content="The Wedding Gallery" />
             <meta name="author" content="Reyan John Narvaja" />
         </Helmet>
         {/* <span className='font-tiny scroll-mgs margin-bottom-1rem'>-shift+scroll-</span> */}

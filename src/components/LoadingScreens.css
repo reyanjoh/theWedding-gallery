@@ -70,6 +70,13 @@
 	animation: .7s loading-animation linear infinite alternate;
 }
 
+.LoadingComponenet{
+	/* background-color: #073D60; */
+    background-color: rgb(216, 216, 216);
+	animation: .7s loading-animation linear infinite alternate;
+}
+
+
 @keyframes loading-animation {
 
 	0% {
