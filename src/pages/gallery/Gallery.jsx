@@ -42,12 +42,8 @@ const Gallery = () => {
             <a className='studio-name' href="#card7">Studio 7</a> */}
         </div>
 
-        
         {/* <AdSpace /> */}
         <GalleryCardSection />
-
-      
-
     </div>
   )
 }

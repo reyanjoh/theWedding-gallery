@@ -13,6 +13,7 @@ import Contact from './pages/contact/Contact';
 import Gallery from './pages/gallery/Gallery';
 import GalleryPost from './pages/gallery/components/galleryPost/GalleryPost';
 import Home from './pages/home/Home';
+import Blogs from './pages/blog/Blogs';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           
         </Route>
 
-        {/* <Route path='/blogs' element={<Gallery />}/> */}
+        <Route path='/blogs' element={<Blogs />}/>
 
         {/* <Route path='/studio-listing' element={<StudioListing />}/> */}
         <Route path='/about' element={<About />}/>
