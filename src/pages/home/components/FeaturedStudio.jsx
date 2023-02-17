@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeaturedStudio = () => {
   return (
-    <section className='FeaturedStudio flex flex-column padding-2-6'>
+    <section className='FeaturedStudio scroll-area flex flex-column padding-2-6'>
         <div className="featured-studio-info">
             <h3 className='studio-name'>Studio 1</h3>
             <span className='presents Garamond'>presents</span>

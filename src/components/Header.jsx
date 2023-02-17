@@ -1,15 +1,24 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import Nav from './Nav'
+import SideNav from './SideNav'
+// import SocialMedias from './SocialMedias'
 
 const Header = () => {
   return (
-    <div className='header flex flex-column padding-2-6'>
-        <div className='logo header flex flex-column flex-align-center'><a href="/">The wedding<br/> gallery</a></div>
+    <div className='header flex flex-center scroll-area'>
 
-        <NavLink className={'submit padding-0-1 font-small'} to={'/submit'}>Submit</NavLink>
+        <SideNav  />
+
+
         {/* <NavLink className={'nav padding-0-1 font-small'} to={'/'}>Home</NavLink> */}
         <Nav />
+        
+
+        
+        
+
+        <span className='scroll'>-scroll-</span>
     </div>
   )
 }

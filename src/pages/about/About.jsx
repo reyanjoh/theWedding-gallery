@@ -7,7 +7,7 @@ const About = () => {
      
 
   return (
-    <div className='About'>
+    <div className='About height100dvh flex flex-center'>
       <Helmet>
         
           {/* <!-- Primary Meta Tags --> */}

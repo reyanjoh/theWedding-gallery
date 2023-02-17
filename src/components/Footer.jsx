@@ -1,5 +1,4 @@
 import React from 'react'
-import SocialMedias from './SocialMedias'
 
 
 
@@ -10,7 +9,6 @@ const Footer = () => {
             <div className="site-map">
                 
             </div>
-            <SocialMedias />
         </div>
         
         <div className="copy-right font-tiny">

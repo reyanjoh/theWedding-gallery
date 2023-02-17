@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='height100dvh flex flex-center'>
         <Helmet>
             <title>Contact | The Wedding Gallery</title>
             <link rel="canonical" href="https://theweddinggallery.pages.dev/contact" />
