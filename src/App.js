@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import NotFound from './components/NotFound';
-// import UnderDevelopment from './components/UnderDevelopment';
+import UnderDevelopment from './components/UnderDevelopment';
 import ApplicationForm from './pages/career/applicationForm/ApplicationForm';
 import About from './pages/about/About';
 // import ApplicationForm from './pages/career/applicationForm/ApplicationForm';
@@ -19,7 +19,7 @@ import SocialMedias from './components/SocialMedias';
 function App() {
   return (
     <div className="App">
-      {/* <UnderDevelopment /> */}
+      <UnderDevelopment />
       <Header />
 
       <Routes>
