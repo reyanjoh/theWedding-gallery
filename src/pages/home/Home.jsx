@@ -17,6 +17,8 @@ const Home = () => {
         <meta name="author" content="Reyan John Narvaja" />
       </Helmet>
       
+      <div className='logo height100dvh flex flex-center'><a href="/">The wedding<br/> gallery</a></div>
+
       <Banner />
       <AdSpace />
       

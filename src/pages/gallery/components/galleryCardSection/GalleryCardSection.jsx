@@ -9,7 +9,7 @@ const GalleryCardSection = () => {
   
   
   return (
-    <section className='GalleryCardSection padding-2-6'>
+    <section className='GalleryCardSection scroll-area padding-2-6'>
         {/* <GalleryCard title={'sad'} id={1}/>
         <GalleryCard title={'saded'} id={2}/>
         <GalleryCard title={'super sad'} id={3}/>

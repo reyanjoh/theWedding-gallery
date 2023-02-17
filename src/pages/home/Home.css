@@ -1,6 +1,6 @@
-.home{
+/* .home{
     min-height: 40vh;
-}
+} */
 
 .banner-cta{
 /* position: relative; */
@@ -26,12 +26,18 @@ transition: .2s;
     background-color: var(--highlight-2);
 }
 
+.FeaturedSection{
+    height: 100vh;
+    overflow-y: auto;
+}
+
 .FeaturedStudio{
-    min-height: 80vh;
+    height: 100dvh;
     /* background-color: rebeccapurple; */
 }
 .featured-studio-info{
     padding-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 

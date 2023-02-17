@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 const Career = () => {
   return (
-    <div className='Career'>
+    <div className='Career height100dvh flex flex-center'>
         <Helmet>
             {/* <!-- Primary Meta Tags --> */}
             <title>Career | The Wedding Gallery</title>
