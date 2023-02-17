@@ -15,13 +15,14 @@ import GalleryPost from './pages/gallery/components/galleryPost/GalleryPost';
 import Home from './pages/home/Home';
 import Blogs from './pages/blog/Blogs';
 import SocialMedias from './components/SocialMedias';
+import ResetScrolling from './util/ResetScrolling';
 
 function App() {
   return (
     <div className="App">
       <UnderDevelopment />
       <Header />
-
+      <ResetScrolling />
       <Routes>
         <Route path='/' element={<Home />}/>
 
