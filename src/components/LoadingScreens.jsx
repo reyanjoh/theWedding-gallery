@@ -91,8 +91,9 @@ export const GalleryCardLoadingScreen = () => {
 export const BlogSectionLoading = () => {
   return (
     <div className='BlogSection-loading'>
+      THIS PAGE IS STILL IN PROGRESS AND NO API CALL, IT WILL ONLY LOAD FOREVER LOL
       <div className="scroll-area BlogSection-loading-hero padding-2-2">
-
+          
         <div className="BlogSection-loading-hero-title-container">
           <div className="LoadingComponenet BlogSection-loading-hero-title"></div>
           <div className="BlogSection-loading-hero-writer-date">

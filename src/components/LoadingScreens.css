@@ -321,7 +321,8 @@ height: 25rem;
 }
 
 .BlogSection-loading-other-posts-large-card{
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
+    padding-bottom: 1rem;
 }
 
 .other-posts-large-card{
