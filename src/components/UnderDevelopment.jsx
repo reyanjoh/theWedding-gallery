@@ -12,7 +12,7 @@ const UnderDevelopment = () => {
         opacity: '.8',
         color: 'red'
 
-    }}>Under Development</div>
+    }}>Prototype</div>
   )
 }
 

@@ -118,6 +118,232 @@ width: 100%;
 height: 25rem;
 /* margin: 1rem; */
 }
+
+
+/*/////////////*/
+/*  BLOG PAGE  */
+/*/////////////*/
+
+.BlogSection-loading{
+    width: 60dvw;
+    /* background-color: brown; */
+}
+
+
+.BlogSection-loading-hero{
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    z-index: 1;
+    height: 25rem;  
+    display: flex;
+    align-items: flex-end; 
+}
+
+
+.BlogSection-loading-hero-title {
+    height: 3rem;
+    width: 30rem;
+    /* pos */
+}
+
+.BlogSection-loading-hero-writer-date{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.BlogSection-loading-hero-writer-profile{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.BlogSection-loading-hero-writer{
+    height: 1.5rem;
+    width: 5rem;
+}
+
+.BlogSection-loading-hero-date{
+    height: 1.5rem;
+    width: 5rem;
+}
+
+.latest5{
+    margin: 2rem 0;
+}
+
+.BlogSection-loading-latest-5{
+    position: relative;
+    columns: 2;
+    gap: 1rem;
+    margin: 1rem 0;
+    /* background-color: brown; */
+    /* height: 25rem; */
+}
+
+.BlogSection-loading-latest-5::before{
+    content: '-Latest 5-';
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -2rem;
+    top: 45%;
+    /* bottom: 0; */
+
+}
+
+.BlogSection-loading-latest-1{
+    /* background-color: bisque; */
+    height: 100%;
+    width: 50%;
+}
+
+.BlogSection-loading-latest-1-img{
+    background-color: rgb(245, 245, 245);
+    height: 12rem;
+}
+
+.BlogSection-loading-latest-1-title{
+    height: 2rem;
+    margin: 1rem 0;
+}
+
+.BlogSection-loading-latest-1-p{
+    height: 1rem;
+    margin: .5rem 0;
+}
+
+
+.BlogSection-loading-latest-4-small{
+    /* background-color: rebeccapurple; */
+    margin: 0 0 1rem 0;
+    display: flex;
+    width: 23rem;
+}
+
+.BlogSection-loading-latest-4-small-img{
+    height: 5.5rem;
+    width: 12rem;
+   
+}
+
+.BlogSection-loading-latest-4-small-blog-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.BlogSection-loading-latest-4-small-title > div{
+    /* background-color: aqua; */
+    height: 1.3rem;
+    margin-bottom: .3rem;
+}
+
+.BlogSection-loading-latest-4-small-date{
+    /* height: 1rem; */
+    display: flex;
+    /* width: ; */
+}
+
+.BlogSection-loading-latest-4-small-date > div{
+    margin-right: .5rem;
+}
+
+.BlogSection-loading-latest-4-small-date > .BlogSection-loading-latest-4-small-author{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+.BlogSection-loading-latest-4-small-date > .author-name{
+    height: 1rem;
+    width: 3rem;
+}
+
+.BlogSection-loading-latest-4-small-date > .date{
+    height: 1rem;
+    width: 3rem;
+}
+
+.BlogSection-loading-sponsor{
+    position: relative;
+    height: 8rem;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+}
+
+
+.BlogSection-loading-sponsor::before{
+    content: '-sponsored ad-';
+    position: absolute;
+    left: 43%;
+    top: -1.5rem;
+    text-transform: uppercase;
+    font-size: var(--font-tiny);
+}
+
+.BlogSection-loading-sponsor-name-moto{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.BlogSection-loading-sponsor-name{
+    height: 2.5rem;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+.BlogSection-loading-sponsor-moto{
+    height: 1rem;
+    width: 70%;
+}
+
+
+.BlogSection-loading-sponsor-imgs{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.BlogSection-loading-sponsor-imgs>div{
+    height: 40%;
+}
+
+.BlogSection-loading-other-posts{
+    margin: 3rem 0;
+}
+
+.BlogSection-loading-other-posts-large{
+    columns: 2;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.BlogSection-loading-other-posts-large-card{
+    background-color: rgb(245, 245, 245);
+}
+
+.other-posts-large-card{
+    padding: 0 1rem;
+}
+
+.BlogSection-loading-other-posts-small{
+    padding-top: 2rem;
+    columns: 2;
+    gap: 1rem;
+
+}
+
+
+
+/*/////////////*/
+/*  BLOG PAGE  */
+/*/////////////*/
+
+/*///////////////////*/
+/* LOADING ANIMATION */
+/*///////////////////*/
   
 .LoadingComponenet{
     scroll-snap-align: center;
@@ -133,6 +359,10 @@ height: 25rem;
 		opacity: 1;
 	}
 	100% {
-		opacity: .1;
+		opacity: .2;
 	}
 }
+
+/*///////////////////*/
+/* LOADING ANIMATION */
+/*///////////////////*/

@@ -144,6 +144,7 @@ a{
 
 .header{
 	position: relative;
+  z-index: 10;
   /* height: 100dvh; */
   /* background-color: #5d6f7c; */
 }
@@ -528,9 +529,15 @@ footer{
 /*/////////////*/
 
 .Blogs{
-  margin-top: 6rem;
+  margin-top: 8rem;
   /* background-color: #073D60; */
 }
+
+.BlogSection{
+  background-color: #9aa506;
+  width: 60dvw;
+}
+
 
 
 
