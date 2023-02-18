@@ -29,9 +29,6 @@ function App() {
         <Route  path='/gallery'>
           <Route index element={<Gallery />}/>
           <Route path='/gallery/:id' element={<GalleryPost />}/>
-          <Route path='/gallery/:studio/:id' element={<GalleryPost />}/>
-
-          {/* <Route path='/post/:id' element={<GalleryPost />}/> */}
           
         </Route>
 
@@ -51,6 +48,7 @@ function App() {
       </Routes>
 
       <SocialMedias />
+      <span className='scroll'>-scroll-</span>
       <Footer />
     </div>
   );
