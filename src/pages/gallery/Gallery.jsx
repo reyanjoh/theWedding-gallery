@@ -27,20 +27,20 @@ const Gallery = () => {
             {data ? data.data[0].attributes.gallery_page_sliders.data.map((data)=>{
               // console.log(data.attributes);
               return (
-                <a target="_blank" rel="noopener noreferrer" href={`https://${data.attributes.studioPageLink}`} key={data.id} id='card1'><GalleryCardSlider data={data} /></a>
+                <a target="_blank" rel="noopener noreferrer" href={data? `https://${data.attributes.studioPageLink}` : null} key={data ? data.id : null} id='card1'><GalleryCardSlider data={data?data:null} /></a>
               );
             }): null}
         </div>
         
-        <div className='studio-names'>
-            {/* <a className='studio-name' href="#card1">Studio 1</a>
+        {/* <div className='studio-names'>
+            <a className='studio-name' href="#card1">Studio 1</a>
             <a className='studio-name' href="#card2">Studio 2</a>
             <a className='studio-name' href="#card3">Studio 3</a>
             <a className='studio-name' href="#card4">Studio 4</a>
             <a className='studio-name' href="#card5">Studio 5</a>
             <a className='studio-name' href="#card6">Studio 6</a>
-            <a className='studio-name' href="#card7">Studio 7</a> */}
-        </div>
+            <a className='studio-name' href="#card7">Studio 7</a>
+        </div> */}
 
         {/* <AdSpace /> */}
         <GalleryCardSection />

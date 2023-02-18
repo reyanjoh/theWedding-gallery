@@ -12,7 +12,7 @@ const GalleryPost = () => {
   const {data, loading} = useFetch(`https://thewedding-gallery-headless-cms.onrender.com/api/gallery-posts/${id}`);
 
   return (
-    <div className='flex flex-column flex-center'>
+    <div className='GalleryPost flex flex-column padding-0-6'>
 
       {loading && <LoadingImagesComponenet />}   
       {data && <ImagesComponenet data={data} loading={loading}/>}

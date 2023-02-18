@@ -4,7 +4,7 @@ import { faFacebookF, faPinterestP, faTwitter } from '@fortawesome/free-brands-s
 
 const SocialMedias = () => {
   return (
-    <div className="socials-header flex flex-column">
+    <div className="socials flex flex-column">
     
         <a className='social-icons' href="https://www.facebook.com/people/The-Wedding-Gallery/100089969114185/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF}/>

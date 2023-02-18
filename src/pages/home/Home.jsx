@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import AdSpace from '../../components/AdSpace'
+
 import Banner from './components/Banner'
 import FeaturedSection from './components/FeaturedSection';
 import './Home.css';
@@ -20,7 +20,7 @@ const Home = () => {
       <div className='logo height100dvh flex flex-center'><a href="/">The wedding<br/> gallery</a></div>
 
       <Banner />
-      <AdSpace />
+      
       
       <FeaturedSection />
 

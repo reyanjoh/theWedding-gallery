@@ -65,7 +65,10 @@
 
 
 
-
+.LoadingImagesComponenet-container{
+    width: 60dvw;
+    /* background-color: red; */
+}
 
 
 .LoadingImagesComponenet{
@@ -74,7 +77,50 @@
 	animation: .7s loading-animation linear infinite alternate;
 }
 
+
+
+.LoadingImagesComponenet-title{
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.LoadingImagesComponenet-author{
+height: 1rem;
+width: 6rem;
+margin-bottom: 1rem;
+}
+
+.LoadingImagesComponenet-head-description{
+margin-top: 2rem;
+}
+
+.LoadingImagesComponenet-description{
+height: 2rem;
+width: 100%;
+margin-bottom: 1rem;
+}
+
+.last{
+width: 70%;
+/* margin-bottom: 4rem; */
+}
+
+.LoadingImagesComponenet-Img-section{
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 1rem;
+margin-top: 3rem;
+}
+
+.LoadingImagesComponenet-Img{
+width: 100%;
+height: 25rem;
+/* margin: 1rem; */
+}
+  
 .LoadingComponenet{
+    scroll-snap-align: center;
 	/* background-color: #073D60; */
     background-color: rgb(216, 216, 216);
 	animation: .7s loading-animation linear infinite alternate;

@@ -4,8 +4,8 @@ import './LoadingScreens.css'
 
 export const LoadingImagesComponenet = () => {
   return (
-    <>      
-      <div className='LoadingImagesComponenet-head width62'>
+    <div className='LoadingImagesComponenet-container'>      
+      <div className='LoadingImagesComponenet-head'>
         <div className='LoadingImagesComponenet-head-title flex flex-column flex-center'>
           <div className='LoadingComponenet LoadingImagesComponenet-title'></div>
           <div className='LoadingComponenet LoadingImagesComponenet-title last'></div>
@@ -35,7 +35,7 @@ export const LoadingImagesComponenet = () => {
         <div className='LoadingComponenet LoadingImagesComponenet-Img'></div>
       </div>
     
-    </>
+    </div>
   )
 }
 
