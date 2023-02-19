@@ -56,7 +56,9 @@ export const ImagesComponenet = ({data, loading}) => {
                   <img className='scroll-area' key={uuidv4()} src={data.data.attributes.imgLink10} alt="" />] : null}
       </div>    
 
-      <a className='scroll-area ImagesComponenet-view-more' href={data ? `http://${data.data.attributes.authorPageLink}`: null} target="_blank" rel="noopener noreferrer">View More</a>
+      <a className='' target="_blank" href={data ? `http://${data.data.attributes.authorPageLink}`: null} rel="noopener noreferrer">
+          <div className='BlogSection-content-view-more'>More</div>
+      </a>   
     </div>
   )
 }

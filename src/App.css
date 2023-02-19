@@ -580,6 +580,18 @@ footer{
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.BlogSectionTopFive-container::before{
+  content: '-Latest blogs-';
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -4rem;
+  top: 40%;
+  /* transform:translateY(50%); */
+  /* bottom: 0; */
+
 }
 
 .BlogSectionTopFive-container > .BlogSectionTopFive-content-container{
@@ -651,52 +663,61 @@ footer{
   overflow: hidden;
 }
 
-.BlogSectionTopFive-small-content > a :hover .BlogSectionTopFive-small-content-img{
+/* .BlogSectionTopFive-small-content{
+  columns: 1;
+} */
+
+.BlogSection-small-content > a :hover .BlogSection-small-content-img{
   transform: scale(1.05);
 }
 
-.BlogSectionTopFive-small-content-containers{
+.BlogSection-small-content-containers{
   display: flex;
   /* background-color: green; */
 
 }
 
 
-.BlogSectionTopFive-small-content-img-container{
+.BlogSection-small-content-img-container{
   /* background-color: red; */
   overflow: hidden;
-  width: 14rem;
-  /* margin: 0;
-  padding: 0; */
+  min-width: 7.5rem;
+  margin-right: 1rem;
 }
 
-.BlogSectionTopFive-small-content-img-container > img{
+.BlogSection-small-content-img-container > img{
   transition: .3s;
   height: 5rem;
+  
 }
 
-.BlogSectionTopFive-small-content-author-and-title{
-  padding-left: 1rem;
+.BlogSection-small-content-author-and-title{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 
-.BlogSectionTopFive-small-content-author-and-title > h3{
+.BlogSection-small-content-author-and-title > h3{
   font-size: var(--font-small);
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
   /* background-color: #c5c5c5; */
 }
 
-.BlogSectionTopFive-small-content-author > div {
+.BlogSection-small-content-author > div {
   display: flex;
   align-items: center;
   /* background-color: #9aa506; */
 }
 
-.BlogSectionTopFive-small-content-author > div  *{
+.BlogSection-small-content-author > div  *{
   height: .8rem;
   margin: 0 .5rem 0 0;
   padding: 0;
@@ -704,28 +725,33 @@ footer{
   /* background-color: red; */
 }
 
-.BlogSectionTopFive-small-content-author > div > img{
+.BlogSection-small-content-author > div > img{
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
 }
 
-.BlogSectionTopFive-content-view-more{
+.small-contetn-author-profile-pic{
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.BlogSection-content-view-more{
   /* background-color: #9aa506; */
   transition: .2s;
   border: 1px solid #9aa506;
   color: #9aa506;
-  padding: 1rem 8rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.BlogSectionTopFive-content-view-more:hover{
+.BlogSection-content-view-more:hover{
   background-color: #9aa506;
   color: white;
 }
-
-
-
-
 
 
 
@@ -745,6 +771,74 @@ footer{
   transform: translateX(50%);
   font-size: var(--font-tiny);
 }
+
+.BlogSectionOtherTopic-large-content-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  padding: 1rem 1rem 0;
+}
+
+
+
+.BlogSectionOtherTopic-large-content-container > a{
+  /* background-color: red; */
+  max-height: 18rem;
+}
+
+.BlogSectionOtherTopic-large-content-container > a:hover .BlogSectionTopFive-large-content-cover-img{
+  transform: scale(1.05);
+}
+
+
+.BlogSectionOtherTopic-large-content-container > a > .BlogSectionTopFive-large-content-cover{
+  height: 60%;
+}
+
+.BlogSectionOtherTopic-large-content-container > a > div > h2{
+  -webkit-line-clamp: 1;
+  margin: 1rem 0 0;
+}
+
+.BlogSectionOtherTopic-large-content-container > a > div > p{
+  -webkit-line-clamp: 2;
+  margin: .2rem 0 0;
+  
+}
+
+
+.BlogSectionOtherTopic-large-content-container > a > .BlogSectionTopFive-large-content-author > div {
+  display: flex;
+  align-items: center;
+  /* background-color: #073D60; */
+}
+
+.BlogSectionOtherTopic-large-content-container > a > .BlogSectionTopFive-large-content-author > div *{
+  margin-top: 0;
+}
+
+
+.BlogSectionOtherTopic-small-content-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1rem;
+  /* background-color: red; */
+}
+
+
+.BlogSectionOtherTopic-view-more > div{
+  margin: .5rem 0 0;
+}
+
+.BlogSectionOtherTopic-small-content-container{
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/* .BlogSectionOtherTopic-small-content-container > a{
+  background-color: #124375;
+} */
+
 
 
 
