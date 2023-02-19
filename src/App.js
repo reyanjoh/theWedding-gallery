@@ -48,7 +48,7 @@ function App() {
       </Routes>
 
       <SocialMedias />
-      <span className='scroll'>-scroll-</span>
+      <span className='scroll'>→scroll→</span>
       <Footer />
     </div>
   );
