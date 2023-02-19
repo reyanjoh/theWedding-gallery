@@ -27,7 +27,7 @@ transition: .2s;
 }
 
 .FeaturedSection{
-    height: 100vh;
+    /* height: 100vh; */
     overflow-y: auto;
 }
 

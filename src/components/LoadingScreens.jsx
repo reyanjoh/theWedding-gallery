@@ -90,7 +90,7 @@ export const GalleryCardLoadingScreen = () => {
 
 export const BlogSectionLoading = () => {
   return (
-    <div className='BlogSection-loading'>
+    <div className='BlogSection-loading scroll-container'>
       THIS PAGE IS STILL IN PROGRESS AND NO API CALL, IT WILL ONLY LOAD FOREVER LOL
       <div className="scroll-area BlogSection-loading-hero padding-2-2">
           
@@ -122,7 +122,7 @@ export const BlogSectionLoading = () => {
           <div className="LoadingComponenet BlogSection-loading-latest-1-p last"></div>
 
         </div>
-        <div className="BlogSection-loading-latest-4">
+        <div className="scroll-area BlogSection-loading-latest-4">
           <div className="BlogSection-loading-latest-4-small">
             <div className="LoadingComponenet BlogSection-loading-latest-4-small-img"></div>
 
@@ -140,7 +140,7 @@ export const BlogSectionLoading = () => {
             </div>
           </div>
 
-          <div className="BlogSection-loading-latest-4-small">
+          <div className="scroll-area BlogSection-loading-latest-4-small">
             <div className="LoadingComponenet BlogSection-loading-latest-4-small-img"></div>
 
             <div className="BlogSection-loading-latest-4-small-blog-info">
@@ -157,7 +157,7 @@ export const BlogSectionLoading = () => {
             </div>
           </div>
 
-          <div className="BlogSection-loading-latest-4-small">
+          <div className="scroll-area BlogSection-loading-latest-4-small">
             <div className="LoadingComponenet BlogSection-loading-latest-4-small-img"></div>
 
             <div className="BlogSection-loading-latest-4-small-blog-info">
