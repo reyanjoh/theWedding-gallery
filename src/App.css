@@ -528,14 +528,23 @@ footer{
 /*  BLOG PAGE  */
 /*/////////////*/
 
-.Blogs{
+/* .Blogs{
   margin-top: 8rem;
-  /* background-color: #073D60; */
-}
+  background-color: #073D60;
+} */
 
 .BlogSection{
-  background-color: #9aa506;
+  /* background-color: #9aa506; */
   width: 60dvw;
+}
+
+.BlogSection > section{
+  height: 100dvh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* padding-top: 8rem;
+  border: 2px solid red; */
 }
 
 
