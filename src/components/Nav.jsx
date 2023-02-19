@@ -22,7 +22,7 @@ export const SideNav = () => {
   return (
     <nav className='SideNav'>
         <NavLink className={'uppercase nav submit padding-0-1 font-small not-available'} to={'/submit'}>Submit</NavLink>
-        <NavLink className={'uppercase nav padding-0-1 font-small not-available'} to={'/blogs'}>Blogs</NavLink>  
+        <NavLink className={'uppercase nav padding-0-1 font-small'} to={'/blogs'}>Blogs</NavLink>  
         <NavLink className={'uppercase nav padding-0-1 font-small'} to={'/career'}>Career</NavLink>
     </nav>
   )

@@ -2,8 +2,8 @@ import React from 'react'
 
 const BlogSectionSponsor = () => {
   return (
-    <div className='scroll-area BlogSectionSponsor'>
-        BlogSectionSponsor
+    <div className='BlogSectionSponsor flex flex-center'>
+        Sponsor name
     </div>
   )
 }
