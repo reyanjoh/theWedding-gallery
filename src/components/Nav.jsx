@@ -9,7 +9,7 @@ export const Nav = () => {
         <div className="menu">
           <NavLink className={'uppercase nav padding-0-1 font-small'} to={'/'}>Home</NavLink>
           <NavLink className={'uppercase nav padding-0-1 font-small'} to={'/gallery'}>Gallery</NavLink>
-          <NavLink className={'uppercase nav padding-0-1 font-small not-available'} to={'/studio-listing'}>Studio Listing</NavLink>
+          <NavLink className={'uppercase nav padding-0-1 font-small not-available'} to={'/studio-listing'}>Directory</NavLink>
           <NavLink className={'uppercase nav padding-0-1 font-small'} to={'/about'}>About</NavLink>
           <NavLink className={'uppercase nav padding-0-1 font-small'} to={'/contact'}>Contact</NavLink>          
         </div>
