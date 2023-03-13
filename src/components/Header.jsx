@@ -8,8 +8,6 @@ const Header = () => {
     <header className='header flex flex-center scroll-area'>
 
         <SideNav  />
-
-
         {/* <NavLink className={'nav padding-0-1 font-small'} to={'/'}>Home</NavLink> */}
         <Nav />
 

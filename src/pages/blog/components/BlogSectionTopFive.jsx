@@ -62,7 +62,7 @@ const BlogSectionTopFive = () => {
                     </div>
                   </div>
                 </div>
-              </a>adipisicing
+              </a>
               
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <div className='BlogSection-small-content-containers'>
