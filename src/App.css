@@ -147,6 +147,9 @@ a{
   z-index: 10;
   /* height: 100dvh; */
   /* background-color: #5d6f7c; */
+  background-color: transparent;
+  /* border: #001a33 1px solid; */
+  /* height:5rem; */
 }
 
 .uppercase{
@@ -166,26 +169,36 @@ a{
 }
 
 nav{
-  position: fixed;
+  
   background-color: transparent;
-  top: 2rem;
-  right: 2rem;
-
+  
+  /* background-color: red; */
 }
 
 .nav{
-  transition: .2s;
+  transition: .5s;
   text-shadow: 1px 1px #ffffff;
+  padding: .3rem 0; 
+  margin: 0 1rem;
 }
+
+
 
 .nav:hover{
   color: rgb(148, 148, 148);
+  border-bottom: 1px solid var(--highlight);
+}
+
+.menu{
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
 }
 
 .SideNav{
   position: fixed;
   top: 2rem;
-  left: 2rem;
+  right: 2rem;
 }
 
 .socials{

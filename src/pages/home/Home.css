@@ -26,10 +26,10 @@ transition: .2s;
     background-color: var(--highlight-2);
 }
 
-.FeaturedSection{
-    /* height: 100vh; */
+/* .FeaturedSection{
+    height: 100vh;
     overflow-y: auto;
-}
+} */
 
 .FeaturedStudio{
     height: 100dvh;
