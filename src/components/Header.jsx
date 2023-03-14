@@ -6,10 +6,11 @@ import {Nav, SideNav} from './Nav'
 const Header = () => {
   return (
     <header className='header flex flex-center scroll-area'>
-
+        <Nav />
+        
         <SideNav  />
         {/* <NavLink className={'nav padding-0-1 font-small'} to={'/'}>Home</NavLink> */}
-        <Nav />
+        
 
     </header>
   )

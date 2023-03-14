@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='padding-2-6'>
+    <footer className='padding-2-6 scroll-area'>
         <div className="site-map-and-socials">
             <div className="site-map">
                 

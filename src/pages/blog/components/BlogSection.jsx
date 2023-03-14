@@ -5,7 +5,7 @@ import BlogSectionTopFive from './BlogSectionTopFive'
 
 const BlogSection = () => {
   return (
-    <div className='BlogSection scroll-container '>
+    <div className='BlogSection'>
       <BlogSectionHero />
       <BlogSectionTopFive />
       <BlogSectionOtherTopic />

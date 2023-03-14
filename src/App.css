@@ -169,10 +169,9 @@ a{
 }
 
 nav{
-  position: fixed;
+  
   background-color: transparent;
-  top: 2rem;
-  right: 2rem;
+  
   /* background-color: red; */
 }
 
@@ -183,15 +182,23 @@ nav{
   margin: 0 1rem;
 }
 
+
+
 .nav:hover{
   color: rgb(148, 148, 148);
   border-bottom: 1px solid var(--highlight);
 }
 
-.SideNav{
+.menu{
   position: fixed;
   top: 2rem;
   left: 2rem;
+}
+
+.SideNav{
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
 }
 
 .socials{

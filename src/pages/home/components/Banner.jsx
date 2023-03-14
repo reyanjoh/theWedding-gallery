@@ -3,7 +3,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div className="banner scroll-area" style={{
+    <div className="scroll-area banner" style={{
         background: 'url(https://images.unsplash.com/photo-1498979237786-9c35706bd45e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)',
         backgroundReapeat: 'no-repeat',
         backgroundSize: 'cover',
