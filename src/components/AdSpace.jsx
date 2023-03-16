@@ -1,4 +1,6 @@
 import React from 'react'
+import './AdSpace.css';
+
 
 const AdSpace = () => {
   return (

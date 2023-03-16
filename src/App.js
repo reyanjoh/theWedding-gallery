@@ -16,6 +16,7 @@ import Home from './pages/home/Home';
 import Blogs from './pages/blog/Blogs';
 import SocialMedias from './components/SocialMedias';
 import ResetScrolling from './util/ResetScrolling';
+import Directory from './pages/directory/Directory';
 
 function App() {
   return (
@@ -29,12 +30,15 @@ function App() {
         <Route  path='/gallery'>
           <Route index element={<Gallery />}/>
           <Route path='/gallery/:id' element={<GalleryPost />}/>
-          
         </Route>
 
         <Route path='/blogs' element={<Blogs />}/>
 
         {/* <Route path='/studio-listing' element={<StudioListing />}/> */}
+
+        <Route path='/directory'>
+          <Route index element={<Directory />}/>
+        </Route>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
 
