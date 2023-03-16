@@ -4,18 +4,21 @@ import React from 'react'
 const Banner = () => {
   return (
     <div className="scroll-area banner" style={{
-        background: 'url(https://images.unsplash.com/photo-1498979237786-9c35706bd45e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)',
+        background: 'url(./util/src/imgs/banner1.jpg)',
         backgroundReapeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'bottom'
         
       }}>
 
-        {/* <div className='banner-cta flex flex-column flex-justify-center'>
-            <h1 className='banner-h1 padding-0-6 Garamond white'>See the list of top rated Wedding Photographers in Bukidnon and their works.</h1> 
+        <div className='banner-cta flex flex-column flex-justify-center'>
+            <h1 className='banner-h1 padding-0-6 Garamond white'>Kim + Norme Engagement Preview</h1> 
 
-            <a className='banner-btn Garamond' href="/gallery">Learn More</a>
-        </div> */}
+            <span className='banner-cta-studio'>Photo by: <a className='banner-cta-studio-name' href="https://www.facebook.com/rheyrhensph" target="_blank" rel="noopener noreferrer">CapturedMoments Studio</a></span>
+
+    
+            <a className='banner-btn Garamond' href="/gallery/5">View More</a>
+        </div>
     </div>
   )
 }

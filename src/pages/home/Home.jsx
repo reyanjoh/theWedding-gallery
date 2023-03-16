@@ -20,14 +20,9 @@ const Home = () => {
       <div className='logo height100dvh flex flex-center'><a href="/">The wedding<br/> gallery</a></div>
 
       <Banner />
-      
-      
+    
       <FeaturedSection />
-
       
-
-
-  
     </div>
   )
 }
