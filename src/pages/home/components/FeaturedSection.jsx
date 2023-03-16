@@ -3,11 +3,11 @@ import FeaturedStudio from './FeaturedStudio'
 
 const FeaturedSection = () => {
   return (
-    <div className='FeaturedSection height100dvh scroll-container scroll-area'>
+    <div className='FeaturedSection'>
+        {/* <FeaturedStudio />
         <FeaturedStudio />
         <FeaturedStudio />
-        <FeaturedStudio />
-        <FeaturedStudio />
+        <FeaturedStudio /> */}
     </div>
   )
 }

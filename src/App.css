@@ -7,7 +7,10 @@
   /* --darker-yellow-color: #ffb048; */
 
   --highlight: #9aa506;
+  /* --highlight: #B2804F;   */
   --highlight-2: #d8daba;
+
+  --banner-studio-color-theme: #9aa506;
 
   --bg-color-light:#f5f7f8;
   --bg-color-mid:#1B548A;
@@ -160,12 +163,14 @@ a{
   font-family: 'Rhythem';
   font-size: 4rem;
   line-height: 2rem;
-
   width: 100%;
 
   /* background-color: #073D60; */
   /* position: absolute; */
 
+}
+.logo>a{
+  color: var(--highlight);
 }
 
 nav{
@@ -213,8 +218,11 @@ nav{
   bottom: 4rem;
   right: 2rem;
   transform: rotate(90deg);
+  text-shadow: 1px 1px #ffffff;
   /* font-size: 2rem; */
   /* font-weight: 100; */
+  color: var(--highlight);
+
 }
 
 
@@ -224,9 +232,11 @@ nav{
 }
 
 .social-icons *{
-  color: #5d6f7c;
+  /* color: #5d6f7c; */
   width: 3rem;
   padding: .5rem 0 ;
+  color: var(--highlight);
+  
   /* background-color: red; */
 }
 
